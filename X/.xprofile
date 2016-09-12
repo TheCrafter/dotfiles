@@ -1,0 +1,12 @@
+#
+# ~/.xprofile
+#
+
+# Reset wallpaper (if already set)
+[[ -f ~/.fehbg ]] && ~/.fehbg & 
+
+# Set cursor
+xsetroot -cursor_name left_ptr &
+
+# Set keyboard language toggle
+setxkbmap -layout us,el -option grp:lalt_lshift_toggle

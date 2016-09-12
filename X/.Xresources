@@ -1,0 +1,56 @@
+! vim: set filetype=xdefaults:
+! --------------------------------------------------
+! General colors
+! --------------------------------------------------
+!#include ".Xcolors/OK100-Matrix"
+#include ".Xcolors/gotham"
+
+! --------------------------------------------------
+! Fonts
+! --------------------------------------------------
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintslight
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+
+! --------------------------------------------------
+! URxvt settings
+! --------------------------------------------------
+URxvt*depth: 32
+URxvt*background: [90]#2b2b2b
+URxvt*scrollBar: false
+URxvt*font: xft:DejaVu Sans Mono:size=10
+!URxvt*font: xft:DejaVu Sans Mono for Powerline:size=10,xft:Sigi:size=10
+!URxvt*font: xft:Hack:size=10,xft:Sigi:size=10
+URxvt*letterSpace: -1
+URxvt*internalBorder: 25
+URxvt*borderColor: [90]#2b2b2b
+URxvt*colorBD: #ffffff
+URxvt*cursorColor: #ff8939
+URxvt*cursorColor2: #2b2b2b
+URxvt*cursorBlink: 1
+URxvt*transparent: true
+URxvt*shading: 20
+
+! --------------------------------------------------
+! Rofi settings
+! --------------------------------------------------
+!! Use extended color scheme
+!rofi*color-enabled:		true
+!! Normal row colors
+!rofi*color-normal:		#ffffff,#525d76,#f5f5f5,#5294e2,#ffffff
+!! Urgent row colors
+!rofi*color-urgent:		#ffffff,#dc322f,#f5f5f5,#5294e2,#dc322f
+!! Active row colors
+!rofi*color-active:		#ffffff,#c2cad0,#f5f5f5,#5294e2,#c2cad0
+!! Window colors
+!rofi*color-window:		#ffffff,#f5f5f5
+!! Separator style (none, dash, solid)
+!rofi*separator-style:		solid
+rofi.color-enabled: true
+rofi.color-window: #273238, #273238, #1e2529
+rofi.color-normal: #273238, #c1c1c1, #273238, #394249, #ffffff
+rofi.color-active: #273238, #80cbc4, #273238, #394249, #80cbc4
+rofi.color-urgent: #273238, #ff1844, #273238, #394249, #ff1844

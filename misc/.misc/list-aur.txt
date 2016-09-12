@@ -1,0 +1,6 @@
+cower
+downgrade
+git-lfs
+gtk-theme-arc-git
+pacaur
+paper-icon-theme-git
