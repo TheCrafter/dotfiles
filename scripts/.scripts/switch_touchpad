@@ -1,0 +1,16 @@
+#!/bin/bash
+
+touchpad="ImExPS/2 BYD TouchPad"
+alias getState='xinput list-props "$touchpad" | grep "Device Enabled" | sed "s/\t/\n/g" | sed "2,2d"'
+
+function getState {
+	xinput list-props "$touchpad" | grep "Device Enabled" | sed "s/\t/\n/g" | sed "2,2d"
+}
+
+state=$(getState)
+
+if [ $state == 1 ] ; then
+    xinput disable "$touchpad"
+else
+    xinput enable "$touchpad"
+fi
