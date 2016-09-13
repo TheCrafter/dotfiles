@@ -13,12 +13,14 @@ notify-osd
 nvidia
 nvidia-libgl
 openssh
+orage
 rofi
 rxvt-unicode
 screenfetch
 stow
 sxhkd
 thunar
+tint2
 ttf-dejavu
 wget
 xclip
