@@ -27,6 +27,7 @@ xclip
 xf86-video-intel
 xterm
 xorg-server
+xorg-xbacklight
 xorg-xinit
 xorg-xsetroot
 yajl
