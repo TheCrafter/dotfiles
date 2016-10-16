@@ -31,6 +31,7 @@ tint2
 tree
 ttf-dejavu
 unzip
+valgrind
 wget
 xclip
 xf86-video-intel
