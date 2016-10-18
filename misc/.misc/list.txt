@@ -1,3 +1,4 @@
+alsa-utils
 base-devel
 bspwm
 chromium
@@ -33,6 +34,7 @@ ttf-dejavu
 unzip
 valgrind
 wget
+xbindkeys
 xclip
 xf86-video-intel
 xterm

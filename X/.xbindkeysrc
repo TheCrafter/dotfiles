@@ -1,0 +1,17 @@
+# Increase volume
+"amixer set Master 2%+"
+    XF86AudioRaiseVolume
+
+# Decrease volume
+"amixer set Master 2%-"
+    XF86AudioLowerVolume
+
+# Toggle mute
+"amixer set Master toggle"
+    XF86AudioMute
+
+# Other keys to configure in the future
+#XF86Sleep
+#XF86AudioNext
+#XF86AudioPrev
+#XF86AudioPlay
