@@ -3,7 +3,8 @@
 ! General colors
 ! --------------------------------------------------
 !#include ".Xcolors/OK100-Matrix"
-#include ".Xcolors/gotham"
+!#include ".Xcolors/gotham"
+#include ".Xcolors/kasugano"
 
 ! --------------------------------------------------
 ! Fonts
