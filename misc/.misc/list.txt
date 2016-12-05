@@ -10,6 +10,7 @@ git
 gtk2
 gtk3
 gvim
+iw
 libnotify
 maim
 mesa
@@ -25,10 +26,10 @@ python-pip
 rofi
 rxvt-unicode
 screenfetch
+stalonetray
 stow
 sxhkd
 thunar
-tint2
 tree
 ttf-dejavu
 unzip

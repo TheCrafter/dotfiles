@@ -2,5 +2,7 @@ cower
 downgrade
 git-lfs
 gtk-theme-arc-git
+lemonbar-xft-git
 pacaur
 paper-icon-theme-git
+xtitle-git

@@ -34,9 +34,6 @@ fi
 # User programs
 [ -f ~/.xprofile ] && . ~/.xprofile
 
-# Bar
-tint2 &
-
 # Window manager
 sxhkd &
 exec bspwm
