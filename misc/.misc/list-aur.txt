@@ -1,4 +1,5 @@
 cower
+discord-canary
 downgrade
 git-lfs
 gtk-theme-arc-git
