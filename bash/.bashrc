@@ -26,3 +26,8 @@ alias poweroff='sudo systemctl poweroff'
 alias halt='sudo systemctl halt'
 alias reboot='sudo systemctl reboot'
 alias cls='clear'
+
+# --------------------------------------------------
+# Programs
+# --------------------------------------------------
+source /etc/profile.d/autojump.bash

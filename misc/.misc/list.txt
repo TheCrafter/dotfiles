@@ -1,5 +1,6 @@
 adobe-source-code-pro-fonts
 alsa-utils
+autojump
 base-devel
 bspwm
 cabal-install
