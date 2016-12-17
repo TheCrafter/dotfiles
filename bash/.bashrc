@@ -9,6 +9,7 @@
 # Exports
 # --------------------------------------------------
 export EDITOR=vim
+export ANDROID_HOME=/opt/android-sdk
 
 # --------------------------------------------------
 # Aliases
