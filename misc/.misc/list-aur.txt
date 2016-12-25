@@ -1,3 +1,4 @@
+conky-lua-nv
 cower
 discord-canary
 downgrade

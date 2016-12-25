@@ -16,3 +16,6 @@ xbindkeys
 
 # Start thunar as daemon
 thunar --daemon &
+
+# Launch conky HUD
+for rc in .config/conky/widgets-available/*; do conky -c $rc & done
