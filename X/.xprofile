@@ -18,4 +18,7 @@ xbindkeys
 thunar --daemon &
 
 # Launch conky HUD
-for rc in .config/conky/widgets-available/*; do conky -c $rc & done
+for rc in .config/conky/widgets-enabled/*; do conky -c $rc & done
+
+# Launch compton
+compton -b &

@@ -7,6 +7,7 @@ cabal-install
 chromium
 clang
 cmake
+compton
 expac
 feh
 ghc
