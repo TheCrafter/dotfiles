@@ -1,0 +1,22 @@
+#!/bin/bash
+SUPERNODE=snf-570882.vm.okeanos.grnet.gr:5150
+PARTY=TAPArty
+PASS=datpass
+VTAP=n2n0
+PIPE=/tmp/n2n-pipe
+
+echo [+] Connecting to VPN...
+mkfifo $PIPE
+function ctrl_c() {
+    echo [+] Ctrl-C caught!
+    echo [+] Killing edge with pid $EDGE_PID...
+    kill $EDGE_PID
+    wait
+    rm $PIPE
+}
+trap ctrl_c INT
+
+edge -f -d $VTAP -r -a dhcp:0.0.0.0 -c $PARTY -k $PASS -l $SUPERNODE 2>&1 >$PIPE &
+EDGE_PID=$!
+(sleep 4 && dhcpcd -B $VTAP 2> $PIPE) &
+cat $PIPE
