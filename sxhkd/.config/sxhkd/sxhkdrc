@@ -64,7 +64,10 @@ super + ctrl + {x,y,z}
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
-	bspc node -{f,s} {west,south,north,east}
+        act={f,s}; \
+        dir={west,south,north,east}; \
+        bspc query -N -d && bspc node -$act $dir || bspc monitor -f $dir
+	#bspc node -{f,s} {west,south,north,east}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
@@ -90,7 +93,15 @@ super + {o,i}
 
 # focus or send to the given desktop
 super + {_,shift + }{1-9,0}
-	bspc {desktop -f,node -d} '^{1-9,10}'
+	bspc {desktop -f,node -d} focused:'^{1-9,10}'
+
+# Focus monitor using arrow keys
+super + {Left, Up, Right, Down}
+        bspc monitor -f {west, north, east, south}
+
+# Move window to monitor using arrow keys
+super + shift + {Left, Up, Right, Down}
+        bspc node -m {west, north, east, south}
 
 #
 # preselect
