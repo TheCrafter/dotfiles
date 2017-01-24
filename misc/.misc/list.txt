@@ -35,6 +35,7 @@ screenfetch
 stalonetray
 stow
 sxhkd
+thefuck
 thunar
 thunar-volman
 tree

@@ -27,6 +27,9 @@ alias halt='sudo systemctl halt'
 alias reboot='sudo systemctl reboot'
 alias cls='clear'
 
+# Other
+eval $(thefuck --alias)
+
 # --------------------------------------------------
 # Programs
 # --------------------------------------------------
